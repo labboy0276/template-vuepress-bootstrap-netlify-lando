@@ -1,0 +1,28 @@
+{
+  "name": "treeexperts.com",
+  "version": "1.0.0",
+  "description": "Tree Experts Website.",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "markdownlint-cli": "^0.3.1",
+    "vuepress": "^1.0.4",
+    "vuepress-plugin-autometa": "^0.1.12",
+    "vuepress-plugin-canonical": "^1.0.0",
+    "vuepress-plugin-robots": "^1.0.1",
+    "vuepress-plugin-sitemap": "https://github.com/ekoeryanto/vuepress-plugin-sitemap#dd8b9763b2c7939668a67f2afa34de501dea45d4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.26"
+  },
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src -d _book",
+    "lint": "eslint  --quiet --ext .js,.vue --no-ignore --config .eslintrc.json src/.vuepress/**/*.js",
+    "test": "markdownlint README.md src/**/*.md src/*.md"
+  }
+}

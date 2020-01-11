@@ -1,0 +1,31 @@
+name: tvbnl
+excludes:
+  - node_modules
+proxy:
+  node:
+    - tvbnl.lndo.site:8080
+services:
+  node:
+    type: node:10
+    build:
+      - yarn install
+    command: "su - node -c 'cd /app && yarn dev'"
+    port: 8080
+tooling:
+  node:
+    service: node
+  yarn:
+    service: node
+  mdl:
+    service: node
+    cmd: markdownlint
+  vuepress:
+    service: node
+  lint:
+    service: node
+    cmd: yarn run lint
+    description: Run linter
+  test:
+    service: node
+    cmd: yarn run test
+    description: Run tests
