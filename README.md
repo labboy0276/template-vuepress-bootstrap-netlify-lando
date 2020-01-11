@@ -1,12 +1,10 @@
-# VuePress Template
+# VuePress, Bootsrap 4, Netlify, Lando Template
 
-Use this template to easily spin up Bootsrap 4 themed VuePress sites to use locally and on Netlify.
+Use this template to easily spin up Bootsrap 4 themed VuePress sites to use locally with Lando and on Netlify.
 
 ### Developing
 
 You can easily get the site running locally.
-
-__TODO: Add link to start state spinups__
 
 ```bash
 # Start it up
