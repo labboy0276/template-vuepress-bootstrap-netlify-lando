@@ -14,7 +14,6 @@
 <script>
 
   export default {
-    components: {Services, Gallery},
     computed: {
       // You can use these to manipulate different components later.
       data () {
